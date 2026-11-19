@@ -1,10 +1,14 @@
+
 from studentresult import calculate_result
 
 def test_total():
-    assert calculate_result(80, 90, 70) == 240
+    total, average, percentage = calculate_result(80, 90, 70)
+    assert total == 240
 
 def test_average():
-    assert calculate_result(80, 90, 70) == 80
+    total, average, percentage = calculate_result(80, 90, 70)
+    assert average == 80
 
 def test_percentage():
-    assert calculate_result(80, 90, 70) == 80
+    total, average, percentage = calculate_result(80, 90, 70)
+    assert percentage == 80
