@@ -1,5 +1,5 @@
 
-from result import calculate_result
+from studentresult import calculate_result
 
 def test_total():
     assert calculate_result(80, 90, 70) == 240
